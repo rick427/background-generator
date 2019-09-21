@@ -5,7 +5,9 @@ const color2 = document.querySelector('.color2');
 
 function setGradient(){
     body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value} )`;
+    h3.textContent = body.style.background + ';';
 }
+
 
 color1.addEventListener('input', setGradient);
 
